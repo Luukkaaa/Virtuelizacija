@@ -1,5 +1,4 @@
 # Virtuelizacija
-Virtuelizacija
 ![image alt](https://github.com/Luukkaaa/Virtuelizacija/blob/603780b91317fd216bb217dac4e052be5805b54b/e7af9af4-2ab0-44bb-8cd3-d3775a9b1bd9.png)
 
 ### A. Komponente sistema
