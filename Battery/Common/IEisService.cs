@@ -2,7 +2,7 @@
 
 namespace Common
 {
-    [ServiceContract(SessionMode = SessionMode.Required)]
+    [ServiceContract(SessionMode = SessionMode.Allowed)]
     public interface IEisService
     {
         [OperationContract]
