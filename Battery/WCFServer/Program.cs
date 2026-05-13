@@ -1,15 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ServiceModel;
 
 namespace WCFServer
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
+            using (ServiceHost host = new ServiceHost(typeof(EisService)))
+            {
+                host.Open();
+                Console.WriteLine("WCF Servis je uspešno pokrenut na net.tcp://localhost:8000/EisService");
+                Console.WriteLine("Pritisnite ENTER za gašenje...");
+                Console.ReadLine();
+            }
         }
     }
 }
