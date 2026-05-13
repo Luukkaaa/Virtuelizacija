@@ -52,6 +52,8 @@ namespace Client
                 using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
                 using (StreamReader reader = new StreamReader(fs))
                 {
+                    reader.ReadLine();
+
                     string line;
                     int rowCount = 0;
 

@@ -5,7 +5,7 @@ using Common;
 namespace WCFServer
 {
     // InstanceContextMode.PerSession garantuje da svaki klijent ima svoju instancu servisa (svoju sesiju)
-    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class EisService : IEisService
     {
         private int _lastRowIndex = -1;
