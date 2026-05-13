@@ -17,7 +17,7 @@ namespace Client
             IEisService proxy = factory.CreateChannel();
 
             // Podesite putanju do vašeg testnog dataset foldera
-            string datasetPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory);
+            string datasetPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Dataset");
 
             if (!Directory.Exists(datasetPath))
             {
