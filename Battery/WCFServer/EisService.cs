@@ -4,7 +4,7 @@ using Common;
 
 namespace WCFServer
 {
-    // InstanceContextMode.PerSession garantuje da svaki klijent ima svoju instancu servisa (svoju sesiju)
+
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
     public class EisService : IEisService
     {
@@ -38,8 +38,6 @@ namespace WCFServer
             }
 
             _lastRowIndex = sample.RowIndex;
-            // Simulacija upisa na disk za KT1 (biće urađeno u KT2)
-            // Console.WriteLine($"Primljen uzorak: {sample.RowIndex}, Freq: {sample.FrequencyHz}");
 
             return ServerStatus.IN_PROGRESS;
         }
